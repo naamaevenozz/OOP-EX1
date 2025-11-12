@@ -1,0 +1,22 @@
+Naama Even Oz  
+213710676
+
+- WhateverPlayer: Chooses a random empty cell on the board for every move.
+- NaivePlayer: Iterates through the board row by row, column by column, and plays in the first available empty cell it finds.
+- SmartPlayer: Tries to win by completing a row/column/diagonal of its marks (size=4, winStreak=3). 
+  If it cannot win this turn, it tries to block the opponent’s winning move. 
+  If neither is possible, it plays strategically by prioritizing the center, then the corners, 
+  and finally chooses a random empty cell.
+
+All players implement the Player interface, which defines a single method: playTurn(Board board, Mark mark).
+This allows the Game and Tournament classes to interact with any type of player in the same way, 
+without knowing its internal implementation. 
+
+This design leverages key Object-Oriented Programming concepts:
+- **Encapsulation**: Each player hides its logic and internal state.
+- **Abstraction**: The system only depends on the Player interface, not the implementation details.
+- **Polymorphism**: The same method signature is used across all player types.
+- **Information Hiding**: The Game class doesn't need to know how a player decides its move.
+- **Minimal API**: The Player interface only exposes what is strictly necessary.
+
+No additional classes were added beyond those specified in the assignment instructions.
