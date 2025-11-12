@@ -123,7 +123,8 @@ public class Tournament {
      */
     public static void main(String[] args) {
         if (args.length < 6) {
-            System.out.println("Usage: java Tournament <rounds> <size> <winStreak> <rendererType> <player1Type> <player2Type>");
+            System.out.println
+            ("Usage: java Tournament <rounds> <size> <winStreak> <rendererType> <player1Type> <player2Type>");
             return;
         }
 

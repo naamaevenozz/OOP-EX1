@@ -2,13 +2,14 @@
  * A factory class that creates {@link Renderer} objects according to a given type and board size.
  * <p>
  * This class follows the <b>Factory Design Pattern</b>, encapsulating the logic of object creation.
- * It supports generating multiple renderer types based on user input while maintaining a unified API.
+ * It supports generating multiple renderer types based on user input while maintaining unified API.
  * </p>
  *
  * <p>Supported renderer types:</p>
  * <ul>
  *     <li>{@value #CONSOLE_TYPE} – creates a {@link ConsoleRenderer} that displays the board on screen.</li>
- *     <li>{@value #VOID_TYPE} – creates a {@link VoidRenderer} that performs no rendering (used for simulations).</li>
+ *     <li>{@value #VOID_TYPE} – creates a {@link VoidRenderer}
+ *     that performs no rendering (used for simulations).</li>
  * </ul>
  *
  * <p>This design demonstrates <b>Abstraction</b> and <b>Encapsulation</b>:
